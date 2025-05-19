@@ -794,11 +794,7 @@
                 </div>
 
                 <!-- WhatsApp Widget -->
-                <div id="whatsapp-widget">
-
-                    <div class="close-btn"
-                    onclick="document.getElementById('whatsapp-widget').style.display='none'">✕</div>
-
+                <div class="whatsapp-widget">
                     <div class="contact" onclick="openWhatsApp('+60123134660')">
                         <img src="https://img.icons8.com/color/48/000000/whatsapp.png" />
                         <span>Nara (Interior Stylist)</span>
@@ -807,13 +803,11 @@
                         <img src="https://img.icons8.com/color/48/000000/whatsapp.png" />
                         <span>Yu Jeen (Architect)</span>
                     </div>
-
                 </div>
 
                 <!-- Floating Button -->
-                <div id="open-whatsapp-widget"
-                    onclick="document.getElementById('whatsapp-widget').style.display='block'">
-                    <img src="icons/WhatsApp-icon.png" />
+                <div class="whatsapp-float-button" onclick="toggleWidget()">
+                    <img src="icons/WhatsApp-icon.png" alt="Chat WhatsApp" />
                 </div>
 
                 <!-- JavaScript -->
@@ -821,6 +815,11 @@
                     function openWhatsApp(number) {
                         const url = `https://wa.me/${number}`;
                         window.open(url, '_blank');
+                    }
+
+                    function toggleWidget() {
+                        const widget = document.querySelector('.whatsapp-widget');
+                        widget.style.display = widget.style.display === 'block' ? 'none' : 'block';
                     }
                 </script>
 
@@ -964,7 +963,6 @@
                     <br class="clear">
                 </div>
             </div>
-        </div><a id="toTop" href="javascript:;"><i class="fa fa-angle-up"></i></a>
         <input type="hidden" id="pp_fixed_menu" name="pp_fixed_menu" value="1">
         <input type="hidden" id="tg_sidebar_sticky" name="tg_sidebar_sticky" value="1">
         <input type="hidden" id="pp_topbar" name="pp_topbar" value="">
