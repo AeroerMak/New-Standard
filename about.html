@@ -383,7 +383,45 @@
                         </div>
                     </div>
                 </div>
-                <br class="clear">
+                <!-- WhatsApp Widget -->
+                <div id="whatsapp-widget">
+                    <div class="header">
+                        <img src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="WhatsApp Icon" />
+                        <p>
+                            Feel free to reach out to us on WhatsApp for any
+                            <strong><span style="color:red">inquiries</span></strong>
+                            about our furniture collections or services.
+                        </p>
+                        <div class="close-btn"
+                            onclick="document.getElementById('whatsapp-widget').style.display='none'">✕</div>
+                    </div>
+
+                    <p class="subtext">The team typically replies in a few minutes.</p>
+
+                    <div class="contact" onclick="openWhatsApp('+60123134660')">
+                        <img src="https://img.icons8.com/color/48/000000/whatsapp.png" />
+                        <span>Nara (Interior Stylist)</span>
+                    </div>
+                    <div class="contact" onclick="openWhatsApp('+60162529229')">
+                        <img src="https://img.icons8.com/color/48/000000/whatsapp.png" />
+                        <span>Yu Jeen (Architect)</span>
+                    </div>
+
+                </div>
+
+                <!-- Floating Button -->
+                <div id="open-whatsapp-widget"
+                    onclick="document.getElementById('whatsapp-widget').style.display='block'">
+                    <img src="icons/WhatsApp-icon.png" />
+                </div>
+
+                <!-- JavaScript -->
+                <script>
+                    function openWhatsApp(number) {
+                        const url = `https://wa.me/${number}`;
+                        window.open(url, '_blank');
+                    }
+                </script>
             </div>
 
 
@@ -519,7 +557,45 @@
                         </ul>
                     </div>
                     <div id="copyright">© Copyright The New Standard 2024 - Develop by <a class="text-light" href="https://aeroer.live/" target="_blank"> Aeroer.Live</a>. All Rights Reserved.</div>
-                    <br class="clear">
+                    <!-- WhatsApp Widget -->
+                <div id="whatsapp-widget">
+                    <div class="header">
+                        <img src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="WhatsApp Icon" />
+                        <p>
+                            Feel free to reach out to us on WhatsApp for any
+                            <strong><span style="color:red">inquiries</span></strong>
+                            about our furniture collections or services.
+                        </p>
+                        <div class="close-btn"
+                            onclick="document.getElementById('whatsapp-widget').style.display='none'">✕</div>
+                    </div>
+
+                    <p class="subtext">The team typically replies in a few minutes.</p>
+
+                    <div class="contact" onclick="openWhatsApp('+60123134660')">
+                        <img src="https://img.icons8.com/color/48/000000/whatsapp.png" />
+                        <span>Nara (Interior Stylist)</span>
+                    </div>
+                    <div class="contact" onclick="openWhatsApp('+60162529229')">
+                        <img src="https://img.icons8.com/color/48/000000/whatsapp.png" />
+                        <span>Yu Jeen (Architect)</span>
+                    </div>
+
+                </div>
+
+                <!-- Floating Button -->
+                <div id="open-whatsapp-widget"
+                    onclick="document.getElementById('whatsapp-widget').style.display='block'">
+                    <img src="icons/WhatsApp-icon.png" />
+                </div>
+
+                <!-- JavaScript -->
+                <script>
+                    function openWhatsApp(number) {
+                        const url = `https://wa.me/${number}`;
+                        window.open(url, '_blank');
+                    }
+                </script>
                 </div>
             </div>
         </div><a id="toTop" href="javascript:;"><i class="fa fa-angle-up"></i></a>

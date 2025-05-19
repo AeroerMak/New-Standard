@@ -53263,4 +53263,90 @@ padding: 0px 50px 50px 50px;
 
 }
 
-/* Test Code */
+
+
+
+/* WhatsApp Widget Styles */
+    #whatsapp-widget {
+      position: fixed;
+      bottom: 100px;
+      right: 20px;
+      width: 300px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      font-family: Arial, sans-serif;
+      display: none;
+      z-index: 9999;
+      padding: 15px;
+    }
+
+    #whatsapp-widget .header {
+      background: #25d366;
+      color: white;
+      border-radius: 8px;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    #whatsapp-widget .header img {
+      width: 36px;
+      height: 36px;
+    }
+
+    #whatsapp-widget .header p {
+      margin: 0;
+      font-size: 14px;
+    }
+
+    #whatsapp-widget .subtext {
+      font-size: 12px;
+      color: #888;
+      margin: 10px 0;
+    }
+
+    #whatsapp-widget .contact {
+      background: #f9f9f9;
+      border: 1px solid #25d366;
+      border-radius: 8px;
+      padding: 10px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: background 0.3s;
+    }
+
+    #whatsapp-widget .contact:hover {
+      background: #e0ffe5;
+    }
+
+    #whatsapp-widget .contact img {
+      width: 32px;
+      height: 32px;
+    }
+
+    #whatsapp-widget .close-btn {
+      position: absolute;
+      top: 5px;
+      right: 10px;
+      cursor: pointer;
+      font-size: 18px;
+      color: black;
+    }
+
+    #open-whatsapp-widget {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      cursor: pointer;
+      z-index: 9999;
+    }
+
+    #open-whatsapp-widget img {
+      width: 180px;
+      height: auto;
+    }
