@@ -518,37 +518,32 @@
         </div>
 
         <!-- WhatsApp Widget -->
-        <div class="whatsapp-widget">
+<div class="whatsapp-widget">
+    <p class="subtext">Talk to our Designers now!</p>
 
-            <p class="subtext">Talk to our Designers now !</p>
+    <a class="contact" href="https://wa.me/60123134660?text=Hi%20Nara%2C%20I%20found%20you%20via%20Google%20Ad" target="_blank">
+        <img src="https://img.icons8.com/color/48/000000/whatsapp.png" />
+        <span>Nara (Interior Stylist)</span>
+    </a>
 
-            <div class="contact" onclick="openWhatsApp('+60123134660')">
-                <img src="https://img.icons8.com/color/48/000000/whatsapp.png" />
-                <span>Nara (Interior Stylist)</span>
-            </div>
-            <div class="contact" onclick="openWhatsApp('+60162529229')">
-                <img src="https://img.icons8.com/color/48/000000/whatsapp.png" />
-                <span>Yu Jeen (Architect)</span>
-            </div>
-        </div>
+    <a class="contact" href="https://wa.me/60162529229?text=Hi%20Yu%20Jeen%2C%20I%20found%20you%20via%20Google%20Ad" target="_blank">
+        <img src="https://img.icons8.com/color/48/000000/whatsapp.png" />
+        <span>Yu Jeen (Architect)</span>
+    </a>
+</div>
 
-        <!-- Floating Button -->
-        <div class="whatsapp-float-button" onclick="toggleWidget()">
-            <img src="icons/WhatsApp-icon.png" alt="Chat WhatsApp" />
-        </div>
+<!-- Floating Button -->
+<div class="whatsapp-float-button" onclick="toggleWidget()">
+    <img src="icons/WhatsApp-icon.png" alt="Chat WhatsApp" />
+</div>
 
-        <!-- JavaScript -->
-        <script>
-            function openWhatsApp(number) {
-                const url = `https://wa.me/${number}`;
-                window.open(url, '_blank');
-            }
-
-            function toggleWidget() {
-                const widget = document.querySelector('.whatsapp-widget');
-                widget.style.display = widget.style.display === 'block' ? 'none' : 'block';
-            }
-        </script>
+<!-- JavaScript -->
+<script>
+    function toggleWidget() {
+        const widget = document.querySelector('.whatsapp-widget');
+        widget.style.display = widget.style.display === 'block' ? 'none' : 'block';
+    }
+</script>
 
         <div id="footer_wrapper">
             <div class="standard_wrapper">
