@@ -5,6 +5,12 @@
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
+    <!-- Preconnect to external domains for faster loading -->
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://img.icons8.com">
+    
+
     <meta name="keywords" content="The New Standard, Interior Design, Home Furniture">
     <meta name="description"
         content="Explore premium home furniture and cutting-edge architecture. The New Living Standard offers high-end living solutions for upscale homes based on malaysia">
@@ -29,7 +35,9 @@
     <meta name="twitter:image" content="assets/image/kitchen_room.png">
 
 
-    <link type="text/css" media="all" href="css/style.css" rel="stylesheet">
+        <!-- Preload critical CSS -->
+    <link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="css/style.css"></noscript>
     <link type="text/css" media="all" href="css/whatsapp.css" rel="stylesheet">
     <link type="text/css" media="only screen and (max-width: 768px)" href="css/responsive.css" rel="stylesheet">
 
@@ -134,7 +142,7 @@
                                                                                         </div>
                                                                                         <div class="image-container">
                                                                                             <img src="images/herobody/NewStandard-Slider01.png"
-                                                                                                alt="The New Standard-Slider01"
+                                                                                                alt="The New Standard-Slider01" loading="lazy" decoding="async"
                                                                                                 class="image">
                                                                                         </div>
                                                                                     </div>
@@ -159,7 +167,7 @@
                                                                                         </div>
                                                                                         <div class="image-container">
                                                                                             <img src="images/herobody/NewStandard-Slider02.png"
-                                                                                                alt="The New Standard-Slider02"
+                                                                                                alt="The New Standard-Slider02" loading="lazy" decoding="async"
                                                                                                 class="image">
                                                                                         </div>
                                                                                     </div>
@@ -184,7 +192,7 @@
                                                                                         </div>
                                                                                         <div class="image-container">
                                                                                             <img src="images/herobody/NewStandard-Slider03.png"
-                                                                                                alt="The New Standard-Slider03"
+                                                                                                alt="The New Standard-Slider03" loading="lazy" decoding="async"
                                                                                                 class="image">
                                                                                         </div>
                                                                                     </div>
@@ -339,7 +347,7 @@
                                                                             <img width="1024" height="683"
                                                                                 src="images/kitchen_room.png"
                                                                                 class="attachment-large size-large"
-                                                                                alt="Kitchen Room">
+                                                                                alt="Kitchen Room" loading="lazy" decoding="async">
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -416,7 +424,7 @@
                                                                                         <div class="post_img_hover ">
                                                                                             <img src="images/projects/dining01.png"
                                                                                                 class=""
-                                                                                                alt="Dining Room">
+                                                                                                alt="Dining Room" loading="lazy" decoding="async">
                                                                                             <a
                                                                                                 href="spaces-dining.html"></a>
                                                                                         </div>
@@ -441,7 +449,7 @@
                                                                                         <div class="post_img_hover ">
                                                                                             <img src="images/projects/living01.png"
                                                                                                 class=""
-                                                                                                alt="Living Room">
+                                                                                                alt="Living Room" loading="lazy" decoding="async">
                                                                                             <a
                                                                                                 href="spaces-living.html"></a>
                                                                                         </div>
@@ -466,7 +474,7 @@
                                                                                         <div class="post_img_hover ">
                                                                                             <img src="images/projects/kitchen01.png"
                                                                                                 class="Kitchen"
-                                                                                                alt="Kitchen">
+                                                                                                alt="Kitchen" loading="lazy" decoding="async">
                                                                                             <a
                                                                                                 href="spaces-kitchen.html"></a>
                                                                                         </div>
@@ -551,7 +559,7 @@
                                                                                     class="portfolio_classic_grid_wrapper tg_two_cols   portfolio-1 tile scale-anm  all no_filter">
                                                                                     <div class="portfolio_classic_img">
                                                                                         <img src="images/explore/diningroom01.png"
-                                                                                            alt="Dining Room">
+                                                                                            alt="Dining Room" loading="lazy" decoding="async">
                                                                                         <div>
                                                                                             <span
                                                                                                 class="ti-arrow-right"></span>
@@ -592,7 +600,7 @@
                                                                                     class="portfolio_classic_grid_wrapper tg_two_cols last  portfolio-2 tile scale-anm  all no_filter">
                                                                                     <div class="portfolio_classic_img">
                                                                                         <img src="images/explore/diningroom02.png"
-                                                                                            alt="Dining Room Design">
+                                                                                            alt="Dining Room Design" loading="lazy" decoding="async">
                                                                                         <div>
                                                                                             <span
                                                                                                 class="ti-arrow-right"></span>
@@ -699,7 +707,7 @@
                                                                                     class="portfolio_classic_grid_wrapper tg_two_cols   portfolio-1 tile scale-anm  all no_filter">
                                                                                     <div class="portfolio_classic_img">
                                                                                         <img src="images/explore/VillaSereneKiara.png"
-                                                                                            alt="Villa Serene Kiara">
+                                                                                            alt="Villa Serene Kiara" loading="lazy" decoding="async">
                                                                                         <div>
                                                                                             <span
                                                                                                 class="ti-arrow-right"></span>
@@ -741,7 +749,7 @@
                                                                                     class="portfolio_classic_grid_wrapper tg_two_cols last  portfolio-2 tile scale-anm  all no_filter">
                                                                                     <div class="portfolio_classic_img">
                                                                                         <img src="images/explore/NGO.png"
-                                                                                            alt="NGO">
+                                                                                            alt="NGO" loading="lazy" decoding="async">
                                                                                         <div>
                                                                                             <span
                                                                                                 class="ti-arrow-right"></span>
@@ -788,7 +796,7 @@
                                                                                     class="portfolio_classic_grid_wrapper tg_two_cols   portfolio-3 tile scale-anm  all no_filter">
                                                                                     <div class="portfolio_classic_img">
                                                                                         <img src="images/explore/Livingroom.png"
-                                                                                            alt="Living Room">
+                                                                                            alt="Living Room" loading="lazy" decoding="async">
                                                                                         <div>
                                                                                             <span
                                                                                                 class="ti-arrow-right"></span>
@@ -816,7 +824,7 @@
                                                                                     class="portfolio_classic_grid_wrapper tg_two_cols last  portfolio-4 tile scale-anm  all no_filter">
                                                                                     <div class="portfolio_classic_img">
                                                                                         <img src="images/explore/Livingroom02.png"
-                                                                                            alt="Living Room">
+                                                                                            alt="Living Room" loading="lazy" decoding="async">
                                                                                         <div>
                                                                                             <span
                                                                                                 class="ti-arrow-right"></span>
@@ -882,7 +890,7 @@
 
         <!-- Floating Button -->
         <div class="whatsapp-float-button" onclick="toggleWidget()">
-            <img src="icons/WhatsApp-icon.png" alt="Chat WhatsApp" />
+            <img src="icons/WhatsApp-icon.png" alt="Chat WhatsApp" loading="lazy" decoding="async" />
         </div>
 
         <!-- JavaScript -->

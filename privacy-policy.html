@@ -5,6 +5,12 @@
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
+    <!-- Preconnect to external domains for faster loading -->
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://img.icons8.com">
+    
+
     <meta name="keywords" content="The New Standard, Interior Design, Home Furniture">
     <meta name="description"
         content="Explore premium home furniture and cutting-edge architecture. The New Living Standard offers high-end living solutions for upscale homes based on malaysia">
@@ -29,7 +35,9 @@
     <meta name="twitter:image" content="assets/image/kitchen_room.png">
 
 
-    <link type="text/css" media="all" href="css/style.css" rel="stylesheet">
+        <!-- Preload critical CSS -->
+    <link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="css/style.css"></noscript>
     <link type="text/css" media="all" href="css/whatsapp.css" rel="stylesheet">
     <link type="text/css" media="only screen and (max-width: 768px)" href="css/responsive.css" rel="stylesheet">
 
@@ -220,7 +228,7 @@
                                                                             <img width="768" height="1024"
                                                                                 src="images/privacy-policy/info.jpg"
                                                                                 class="attachment-large size-large"
-                                                                                alt="">
+                                                                                alt="" loading="lazy" decoding="async">
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -389,7 +397,7 @@
                                                                             <img width="1024" height="683"
                                                                                 src="images/privacy-policy/How-We-Use.jpg"
                                                                                 class="attachment-large size-large"
-                                                                                alt="">
+                                                                                alt="" loading="lazy" decoding="async">
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -418,7 +426,7 @@
                                                                             <img width="683" height="1024"
                                                                                 src="images/privacy-policy/Cookies.jpg"
                                                                                 class="attachment-large size-large"
-                                                                                alt="">
+                                                                                alt="" loading="lazy" decoding="async">
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -551,7 +559,7 @@
                                                                             <img width="1024" height="768"
                                                                                 src="images/privacy-policy/Sharing.jpg"
                                                                                 class="attachment-large size-large"
-                                                                                alt="">
+                                                                                alt="" loading="lazy" decoding="async">
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -580,7 +588,7 @@
                                                                             <img width="683" height="1024"
                                                                                 src="images/privacy-policy/Third-Party.jpg"
                                                                                 class="attachment-large size-large"
-                                                                                alt="">
+                                                                                alt="" loading="lazy" decoding="async">
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -712,7 +720,7 @@
                                                                             <img width="1024" height="768"
                                                                                 src="images/privacy-policy/digital-right.jpg"
                                                                                 class="attachment-large size-large"
-                                                                                alt="">
+                                                                                alt="" loading="lazy" decoding="async">
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -747,7 +755,7 @@
                                                                             <img width="683" height="1024"
                                                                                 src="images/privacy-policy/Security.jpg"
                                                                                 class="attachment-large size-large"
-                                                                                alt="">
+                                                                                alt="" loading="lazy" decoding="async">
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -842,7 +850,7 @@
 
         <!-- Floating Button -->
         <div class="whatsapp-float-button" onclick="toggleWidget()">
-            <img src="icons/WhatsApp-icon.png" alt="Chat WhatsApp" />
+            <img src="icons/WhatsApp-icon.png" alt="Chat WhatsApp" loading="lazy" decoding="async" />
         </div>
 
         <!-- JavaScript -->
